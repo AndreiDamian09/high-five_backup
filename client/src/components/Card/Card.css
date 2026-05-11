@@ -1,0 +1,46 @@
+.card {
+  background: rgba(255, 255, 255, 0.96);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+
+.card-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem 1rem;
+  align-items: start;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.card-description {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.card-action {
+  justify-self: end;
+  align-self: start;
+}
+
+.card-content {
+  padding: 0 1.5rem;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}

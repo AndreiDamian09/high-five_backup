@@ -1,0 +1,29 @@
+{
+  "development": {
+    "username": "user",
+    "password": "pass",
+    "database": "crowdsourcingdb",
+    "host": "127.0.0.1",
+    "port": 5433,
+    "dialect": "postgres",
+    "logging": false
+  },
+  "test": {
+    "username": "user",
+    "password": "pass",
+    "database": "crowdsourcingdb_test",
+    "host": "127.0.0.1",
+    "port": 5433,
+    "dialect": "postgres",
+    "logging": false
+  },
+  "production": {
+    "username": "user",
+    "password": "pass",
+    "database": "crowdsourcingdb",
+    "host": "db",
+    "port": 5433,
+    "dialect": "postgres",
+    "logging": false
+  }
+}

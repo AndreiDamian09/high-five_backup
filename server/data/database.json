@@ -1,0 +1,590 @@
+{
+  "cvs": [
+    {
+      "id": "cv_it_01",
+      "name": "Alexandru Popa",
+      "skills": [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Git"
+      ],
+      "experience": "4 ani",
+      "description": "Dezvoltator Full Stack pasionat de tehnologii web moderne. Experiență în MERN stack.",
+      "addedAt": "2025-11-23T10:00:00.000Z"
+    },
+    {
+      "id": "cv_it_02",
+      "name": "George Testaru",
+      "skills": [
+        "Manual Testing",
+        "Jira",
+        "Selenium",
+        "Python",
+        "Bug Tracking"
+      ],
+      "experience": "3 ani",
+      "description": "QA Engineer atent la detalii, specializat în testare automată și manuală pentru aplicații web.",
+      "addedAt": "2025-11-23T10:05:00.000Z"
+    },
+    {
+      "id": "cv_fin_01",
+      "name": "Elena Dumitrescu",
+      "skills": [
+        "Contabilitate",
+        "SAGA",
+        "Excel",
+        "Bilant",
+        "Fiscalitate"
+      ],
+      "experience": "10 ani",
+      "description": "Economist expert contabil, membru CECCAR. Experiență în închideri de lună și declarații fiscale.",
+      "addedAt": "2025-11-23T10:10:00.000Z"
+    },
+    {
+      "id": "cv_trans_01",
+      "name": "Mihai Ionescu",
+      "skills": [
+        "Permis C+E",
+        "Atestat Marfă",
+        "Mecanică auto",
+        "Transport Internațional"
+      ],
+      "experience": "15 ani",
+      "description": "Șofer profesionist TIR, fără incidente. Disponibil pentru curse internaționale în UE.",
+      "addedAt": "2025-11-23T10:15:00.000Z"
+    },
+    {
+      "id": "cv_sales_01",
+      "name": "Cristina Radu",
+      "skills": [
+        "Vânzări B2B",
+        "Negociere",
+        "CRM",
+        "Prospectare",
+        "Engleză"
+      ],
+      "experience": "5 ani",
+      "description": "Agent de vânzări dinamic, cu portofoliu de clienți corporate. Focus pe atingerea targetelor.",
+      "addedAt": "2025-11-23T10:20:00.000Z"
+    },
+    {
+      "id": "cv_med_01",
+      "name": "Dr. Vlad Stănescu",
+      "skills": [
+        "Medicină Generală",
+        "Diagnostic",
+        "Ecografie",
+        "Pediatrie"
+      ],
+      "experience": "7 ani",
+      "description": "Medic specialist medicină de familie. Dedicat îngrijirii pacienților și prevenției.",
+      "addedAt": "2025-11-23T10:25:00.000Z"
+    },
+    {
+      "id": "cv_edu_01",
+      "name": "Ana Profesorescu",
+      "skills": [
+        "Limba Engleză",
+        "Pedagogie",
+        "Predare",
+        "Pregătire Cambridge"
+      ],
+      "experience": "12 ani",
+      "description": "Profesor de limba engleză cu grad didactic I. Experiență în lucrul cu copiii și adolescenții.",
+      "addedAt": "2025-11-23T10:30:00.000Z"
+    },
+    {
+      "id": "cv_horeca_01",
+      "name": "Chef Ion Bucur",
+      "skills": [
+        "Bucătărie internațională",
+        "HACCP",
+        "Coordordonare echipă",
+        "Plating"
+      ],
+      "experience": "9 ani",
+      "description": "Bucătar șef pasionat, specializat în bucătăria mediteraneană și managementul bucătăriei.",
+      "addedAt": "2025-11-23T10:35:00.000Z"
+    },
+    {
+      "id": "cv_constr_01",
+      "name": "Vasile Curent",
+      "skills": [
+        "Electrician",
+        "Instalații joasă tensiune",
+        "Citire scheme",
+        "Mentenanță"
+      ],
+      "experience": "20 ani",
+      "description": "Electrician autorizat ANRE. Execut instalații electrice civile și industriale.",
+      "addedAt": "2025-11-23T10:40:00.000Z"
+    },
+    {
+      "id": "cv_constr_02",
+      "name": "Ing. Robert Podaru",
+      "skills": [
+        "Inginerie Civilă",
+        "AutoCAD",
+        "Management Șantier",
+        "Devize"
+      ],
+      "experience": "6 ani",
+      "description": "Inginer constructor, experiență în coordonarea șantierelor rezidențiale și proiectare.",
+      "addedAt": "2025-11-23T10:45:00.000Z"
+    },
+    {
+      "id": "cv_legal_01",
+      "name": "Diana Avramescu",
+      "skills": [
+        "Drept Comercial",
+        "Redactare contracte",
+        "Consultanță juridică",
+        "Litigii"
+      ],
+      "experience": "4 ani",
+      "description": "Consilier juridic, membru în Barou. Experiență în drept corporativ și recuperare creanțe.",
+      "addedAt": "2025-11-23T10:50:00.000Z"
+    },
+    {
+      "id": "cv_mkt_01",
+      "name": "Raluca Social",
+      "skills": [
+        "Social Media",
+        "Content Creation",
+        "TikTok",
+        "Copywriting",
+        "Canva"
+      ],
+      "experience": "2 ani",
+      "description": "Specialist Marketing Online. Creativă, la curent cu trendurile din social media.",
+      "addedAt": "2025-11-23T10:55:00.000Z"
+    },
+    {
+      "id": "cv_hr_01",
+      "name": "Simona Resurse",
+      "skills": [
+        "Recrutare",
+        "Salarizare",
+        "Revisal",
+        "Onboarding"
+      ],
+      "experience": "8 ani",
+      "description": "Specialist Resurse Umane. Gestionez întregul proces de recrutare și administrare personal.",
+      "addedAt": "2025-11-23T11:00:00.000Z"
+    },
+    {
+      "id": "cv_auto_01",
+      "name": "Doru Mecanicu",
+      "skills": [
+        "Mecanică auto",
+        "Diagnoză computerizată",
+        "Motoare Diesel",
+        "Vulcanizare"
+      ],
+      "experience": "15 ani",
+      "description": "Mecanic auto cu experiență în service multibrand. Rapid și eficient în diagnoză.",
+      "addedAt": "2025-11-23T11:05:00.000Z"
+    },
+    {
+      "id": "cv_imob_01",
+      "name": "Victor Casa",
+      "skills": [
+        "Vânzări Imobiliare",
+        "Negociere",
+        "Evaluare proprietăți",
+        "Permis B"
+      ],
+      "experience": "3 ani",
+      "description": "Agent imobiliar proactiv, specializat pe zona de nord a capitalei. Rezidențial și birouri.",
+      "addedAt": "2025-11-23T11:10:00.000Z"
+    },
+    {
+      "id": "cv_sec_01",
+      "name": "Maria Secretariat",
+      "skills": [
+        "MS Office",
+        "Organizare",
+        "Limba Engleză",
+        "Gestiune corespondență"
+      ],
+      "experience": "5 ani",
+      "description": "Asistent manager organizată, punctuala. Experiență în protocol și organizare evenimente.",
+      "addedAt": "2025-11-23T11:15:00.000Z"
+    },
+    {
+      "id": "cv_secu_01",
+      "name": "Ion Pază",
+      "skills": [
+        "Atestat pază",
+        "Monitorizare video",
+        "Formă fizică bună",
+        "Seriozitate"
+      ],
+      "experience": "10 ani",
+      "description": "Agent de securitate cu experiență în obiective industriale și retail.",
+      "addedAt": "2025-11-23T11:20:00.000Z"
+    },
+    {
+      "id": "cv_beauty_01",
+      "name": "Alina Style",
+      "skills": [
+        "Hairstyling",
+        "Colorimetrie",
+        "Coafuri evenimente",
+        "Tunsoare"
+      ],
+      "experience": "4 ani",
+      "description": "Hairstylist pasionat, cursuri de perfecționare la zi. Creativă și comunicativă.",
+      "addedAt": "2025-11-23T11:25:00.000Z"
+    },
+    {
+      "id": "cv_agr_01",
+      "name": "Ing. Florin Verde",
+      "skills": [
+        "Agronomie",
+        "Horticultură",
+        "Utilaje agricole",
+        "Fitotehnie"
+      ],
+      "experience": "20 ani",
+      "description": "Inginer agronom specializat în culturi mari și protecția plantelor.",
+      "addedAt": "2025-11-23T11:30:00.000Z"
+    },
+    {
+      "id": "cv_upload_01",
+      "name": "Buzatoiu Andrei Damian",
+      "skills": [
+        "Extras din PDF"
+      ],
+      "experience": "Nespecificat",
+      "description": "EXPERIENȚA PROFESIONALĂ... Sef de tura Mega Image... Student Facultatea de Stiinte Economice",
+      "addedAt": "2025-11-23T20:17:50.153Z"
+    },
+    {
+      "id": "1763930325213",
+      "name": "Buzatoiu  Melania",
+      "skills": [
+        "Extras din PDF"
+      ],
+      "experience": "Nespecificat",
+      "description": "\n\nMelania Maria Buzățoiu \nData nașterii: 06/06/1981 Cetățenie: română Număr de telefon: \n(+40) 731737488 (Număr de telefon mobil)     E-mail: melaniamaria606@gmail.com     \nAdresă: str. Matei Basarab ,nr 420, 107105, Brebu Manastirei, România (Acasă)     \n \nSEF DE TURA – 10/10/2019 – ÎN CURS \nabordarea problemelor aparute din timpul programului\ncoordonare echipa\nemitere NRM\nplasare comenzi\nreceptie marfa\ngenerare registre de casa\ndepunere bani\n23/07/2023 Campina, România \nTEHNICIAN IN TRANSPORTURI Liceul Tehnologic Mecanic \nÎN CURS Ploiesti, România \nSTUDENTA Facultatea de Stiinte Economice UPG Ploiesti \nLimbă(i) maternă(e):    ROMÂNĂ \nAltă limbă (Alte limbi):\n  \nCOMPREHENSIUNEVORBITSCRIS\nComprehensiune\norală\nCititExprimare scrisăConversație\nFRANCEZĂ B1B1B1B1B1\nNiveluri: A1 și A2 Utilizator de bază B1 și B2 Utilizator independent C1 și C2 Utilizator experimentat \nNavigare Internet Social Media Utilizare buna a programelor de comunicare(mail messenger skype) Microsoft\nOffice \nEXPERIENȚA PROFESIONALĂ\n MEGA IMAGE – BREBU, ROMÂNIA\nEDUCAȚIE ȘI FORMARE PROFESIONALĂ\nCOMPETENȚE LINGVISTICE \nCOMPETENȚE ",
+      "addedAt": "2025-11-23T20:38:45.213Z"
+    },
+    {
+      "id": "1763979286435",
+      "name": "Buzila Cosmin",
+      "skills": [
+        "Extras din PDF"
+      ],
+      "experience": "Nespecificat",
+      "description": "\n\nApr 2024 - prezentApr 2024 - prezent\n1 an și 8 luni\nFront Office Oficer - Abbott Products RomaniaFront Office Oficer - Abbott Products Romania\nBucurești | Financiar / Contabilitate | Prestări servicii\nIntampinarea vizitatorilor si a clientilor, punerea facturilor in programul pentru\naprobarea acestora, realizarea impartirii pe centre de cost pentru anumite facturi,\nmentinerea unui stoc de piese cat si distribuirea lor la colegi in zone ale tarii in\nfunctie de cerere prin generare de AWB-uri, punerea numarului de inregistrare pe\ndeconturi, arhivarea deconturilor si a facturilor, tinerea evidentei protocolului si a\ninstrumentelor de papetarie, rezolvarea anumitor situatii cu firmele de curierat.\nAbilități și competențe dobândite:\nPDF, engleza, Microsot excel, comunicare munca echipa\nSep 2023 - Iun 2025Sep 2023 - Iun 2025\n1 an și 10 luni\nPicol, in colaborare frecventă Picol, in colaborare frecventă - Riviera Park- Riviera Park\nBucurești | Alimentație / HoReCa | Alimentară\nAm debarasat mesele, le-am rearanjat, am pregătit sala pentru evenimente\nprecum nunți, botezuri, concerte, am lucrat pe terasă.\nAm dobândit experiență in comunicarea cu clienții si in cazuri excepționale, am\nsoluționat anunite probleme de moment.\nAbilități și competențe dobândite:\nCosmin BuzilaCosmin Buzila\nFront Office Oficer - Abbott Products RomaniaFront Office Oficer - Abbott Products Romania\nBucurești\nDate contactDate contact\nEmail: Email: buzilacosmin17@gmail.com\nTel: Tel: +40767727271\nOraș: Oraș: București\nDespre mineDespre mine\nAm cunoștințe in contabilitate deoarece am finalizat liceul pe un profil specific. Sunt familiarizat cu programul\nSaga C. Detin competențe digitale privind pachetul Office. Sunt ambițios, prietenos si pregătit sa învăț pentru a\nma dezvolta.\nAm realizat in liceu contabilitate primara si înregistrări contabile. \nPe timpul facultatii am lucrat in diferite limbaje de programare precum: C, C#, C++, Java, Assembly folosind si\nobisnuindu-ma cu interfete ale: Visual Studio, Visual Studio Code, PyCharm si IntelliJ Idea\nExperiență profesionalăExperiență profesională\nExperiență peExperiență pe\ndepartamentedepartamente\nFinanciar / Contabilitate: 1 an 1 an și 7 luniși 7 luni\nAlimentație / HoReCa: 1 an 1 an și 10 luniși 10 luni\nwww.ejobs.ro contact@ejobs.roCV Cosmin Buzila 1/2\n\nengleza, Fire comunicativa, munca echipa, orientare client, servirea clientilor,\nrelatii clientii, servirea clientilor atitudine zambitoare\n2023 - prezent2023 - prezentFacultate - Facultatea de Cibernetica, Statistica si InformaticaFacultate - Facultatea de Cibernetica, Statistica si Informatica\nEconomicaEconomica\nInformatica Economica | București\n2019 - 20232019 - 2023Liceu / Școală profesională - CNAELiceu / Școală profesională - CNAE\nTehnician in activități economice | Tecuci\nHobby-uriHobby-urisport, jocuri videosport, jocuri video\nVoluntariatVoluntariatTineri pentru MatcaTineri pentru Matca\nperioada Ian 2023 - Ian 2025\nAm luat parte in acest grup de initiativa informal ca si voluntar. Prima data, am\nmers la ateliere de dezvoltare personala si intr-un final am ajuns sa fiu printre\nechipa de organizatori pentru Matchaton 1 si Matcathon 2.0. Am realizat un\nproiect cu mai multi tineri pasionati si dornici sa dezvolte comunitatea din care fac\nparte, mai ales in mediul rural si cu ajutorul fondurilor europene am reusit sa\ncreem aceste 2 proiecte mari in comuna noastra. Ca si organizator am luat parte la\nconceperea programului pentru cele 2 festivaluri care s-au desfasurat timp de 3\nzile, atelierele ce au fost sustinute si activitatile aferente. Am reusit impreuna sa\nstrangem laolalta peste 100 de tineri la ambele editii, unde ne-am distrat si\ndezvoltat cu totii. In urma acestor proiecte am invatat sa comunic mai bine in\nspecial cu tinerii, sa rezolv probleme organizatorice si sa vin cu solutii, dar am\ninvatat si ca partea de birocratica costa timp si este importanta in depunerea unui\nproiect. Consider ca aceste proiecte m-au ajutat sa ma dezvolt la nivel personal si\nprofesional.\nEducațieEducație\nAbilitățiAbilități\nAbilități generaleAbilități generale\nSaga C, HTML, Microsoft Office, Visual Studio, C++, C#, Java\nLimbi străineLimbi străine\nEngleză: Engleză: Mediu\nAlte informațiiAlte informații\nwww.ejobs.ro contact@ejobs.roCV Cosmin Buzila 2/2",
+      "addedAt": "2025-11-24T10:14:46.435Z"
+    },
+    {
+      "id": "1764918432599",
+      "name": "Cosmin Buzila Madalin",
+      "skills": [
+        "Extras din PDF"
+      ],
+      "experience": "Nespecificat",
+      "description": "\n\nEXPERIENȚA PROFESIONALĂ\nEDUCAȚIE ȘI FORMARE PROFESIONALĂ\nCOMPETENȚE LINGVISTICE \nLIMBĂ(I) MATERNĂ(E):  română \nAltă limbă (Alte limbi): \nfranceză \nComprehensiune orală B1 Exprimare scrisă B1 \nCitit B1 Conversație B1 \nScris B1 \n \nNiveluri: A1 și A2 Utilizator de bază B1 și B2 Utilizator independent C1 și C2 Utilizator\nexperimentat \nCOMPETENȚE \nNavigare Internet Social Media Utilizare buna a programelor de\ncomunicare(mail messenger skype) \nMicrosoft Office \nMelania Maria Buzăț\noiu \nData nașterii: 06/06/1981 \nCetățenie: română \nCONTACT \nstr. Matei Basarab ,nr 420, \n107105 Brebu Manastirei,\nRomânia (Acasă) \n\nmelaniamaria606@gmail.com \n\n(+40) 731737488 \n\nSef de tura \n10/10/2019 – În curs \nabordarea problemelor aparute din timpul programului\ncoordonare echipa\nemitere NRM\nplasare comenzi\nreceptie marfa\ngenerare registre de casa\ndepunere bani\nMega Image \nBrebu, România \n23/07/2023 Campina, România \nÎN CURS Ploiesti, România \nTehnician in transporturi Liceul Tehnologic Mecanic \nStudenta Facultatea de Stiinte Economice UPG Ploiesti ",
+      "addedAt": "2025-12-05T07:07:12.599Z"
+    },
+    {
+      "id": "1770580795203",
+      "name": "Candidat (Upload)",
+      "skills": [
+        "Extras din PDF"
+      ],
+      "experience": "Nespecificat",
+      "description": "\n\n2023 - prezent2023 - prezentFacultate - Facultatea de Cibernetică Statistica si InformaticaFacultate - Facultatea de Cibernetică Statistica si Informatica\nEconomica , AseEconomica , Ase\nInformatica Economica | București\n2019 - 20232019 - 2023Liceu / Școală profesională - Colegiul National “Nicolae Grigorescu” ,Liceu / Școală profesională - Colegiul National “Nicolae Grigorescu” ,\nCampinaCampina\nFilologie | Campina\nPermis de conducerePermis de conducereCategoria BCategoria B\ndobândit în 27 Sep 2022\nAndrei DamianAndrei Damian\nBuzatoiuBuzatoiu\n--\nDate contactDate contact\nEmail: Email: buzatoiudamian@gmail.com\nTel: Tel: +40732064513\nOraș: Oraș: Campina\nDespre mineDespre mine\nSunt o persoană creativă, adaptabilă și motivată, cu abilități solide de comunicare. În cadrul facultății am\nacumulat experiență în programare (C, C#, C++, Java, Assembly) și în tehnologii web precum JavaScript, lucrând\ncu diverse medii de dezvoltare. Învăț rapid, mă adaptez ușor și îmi place să contribui la o atmosferă pozitivă în\nechipă.\nEducațieEducație\nAbilitățiAbilități\nAbilități generaleAbilități generale\nFlexibilitate, Creativitate, Perseverenta, Indemanare, cunostinte pachet office, C++, HTML, Visual Studio, Java,\nJavaScript, C#, Python, Intellij Idea, CSS, sql pl sql, Linux, Windows\nLimbi străineLimbi străine\nEngleză: Engleză: Avansat\nAlte informațiiAlte informații\nwww.ejobs.ro contact@ejobs.roCV Andrei Damian Buzatoiu 1/1",
+      "addedAt": "2026-02-08T19:59:55.203Z"
+    },
+    {
+      "id": "1770745831103",
+      "name": "Candidat1",
+      "skills": [
+        "Extras din PDF"
+      ],
+      "experience": "Nespecificat",
+      "description": "\n\n2023 - prezent2023 - prezentFacultate - Facultatea de Cibernetică Statistica si InformaticaFacultate - Facultatea de Cibernetică Statistica si Informatica\nEconomica , AseEconomica , Ase\nInformatica Economica | București\n2019 - 20232019 - 2023Liceu / Școală profesională - Colegiul National “Nicolae Grigorescu” ,Liceu / Școală profesională - Colegiul National “Nicolae Grigorescu” ,\nCampinaCampina\nFilologie | Campina\nPermis de conducerePermis de conducereCategoria BCategoria B\ndobândit în 27 Sep 2022\nAndrei DamianAndrei Damian\nBuzatoiuBuzatoiu\n--\nDate contactDate contact\nEmail: Email: buzatoiudamian@gmail.com\nTel: Tel: +40732064513\nOraș: Oraș: Campina\nDespre mineDespre mine\nSunt o persoană creativă, adaptabilă și motivată, cu abilități solide de comunicare. În cadrul facultății am\nacumulat experiență în programare (C, C#, C++, Java, Assembly) și în tehnologii web precum JavaScript, lucrând\ncu diverse medii de dezvoltare. Învăț rapid, mă adaptez ușor și îmi place să contribui la o atmosferă pozitivă în\nechipă.\nEducațieEducație\nAbilitățiAbilități\nAbilități generaleAbilități generale\nFlexibilitate, Creativitate, Perseverenta, Indemanare, cunostinte pachet office, C++, HTML, Visual Studio, Java,\nJavaScript, C#, Python, Intellij Idea, CSS, sql pl sql, Linux, Windows\nLimbi străineLimbi străine\nEngleză: Engleză: Avansat\nAlte informațiiAlte informații\nwww.ejobs.ro contact@ejobs.roCV Andrei Damian Buzatoiu 1/1",
+      "addedAt": "2026-02-10T17:50:31.103Z"
+    },
+    {
+      "id": "1770745883152",
+      "name": "Candidat2",
+      "skills": [
+        "Extras din PDF"
+      ],
+      "experience": "Nespecificat",
+      "description": "\n\n2023 - prezent2023 - prezentFacultate - Facultatea de Cibernetică Statistica si InformaticaFacultate - Facultatea de Cibernetică Statistica si Informatica\nEconomica , AseEconomica , Ase\nInformatica Economica | București\n2019 - 20232019 - 2023Liceu / Școală profesională - Colegiul National “Nicolae Grigorescu” ,Liceu / Școală profesională - Colegiul National “Nicolae Grigorescu” ,\nCampinaCampina\nFilologie | Campina\nPermis de conducerePermis de conducereCategoria BCategoria B\ndobândit în 27 Sep 2022\nAndrei DamianAndrei Damian\nBuzatoiuBuzatoiu\n--\nDate contactDate contact\nEmail: Email: buzatoiudamian@gmail.com\nTel: Tel: +40732064513\nOraș: Oraș: Campina\nDespre mineDespre mine\nSunt o persoană creativă, adaptabilă și motivată, cu abilități solide de comunicare. În cadrul facultății am\nacumulat experiență în programare (C, C#, C++, Java, Assembly) și în tehnologii web precum JavaScript, lucrând\ncu diverse medii de dezvoltare. Învăț rapid, mă adaptez ușor și îmi place să contribui la o atmosferă pozitivă în\nechipă.\nEducațieEducație\nAbilitățiAbilități\nAbilități generaleAbilități generale\nFlexibilitate, Creativitate, Perseverenta, Indemanare, cunostinte pachet office, C++, HTML, Visual Studio, Java,\nJavaScript, C#, Python, Intellij Idea, CSS, sql pl sql, Linux, Windows\nLimbi străineLimbi străine\nEngleză: Engleză: Avansat\nAlte informațiiAlte informații\nwww.ejobs.ro contact@ejobs.roCV Andrei Damian Buzatoiu 1/1",
+      "addedAt": "2026-02-10T17:51:23.152Z"
+    },
+    {
+      "id": "1770745895051",
+      "name": "Candidat3",
+      "skills": [
+        "Extras din PDF"
+      ],
+      "experience": "Nespecificat",
+      "description": "\n\n2023 - prezent2023 - prezentFacultate - Facultatea de Cibernetică Statistica si InformaticaFacultate - Facultatea de Cibernetică Statistica si Informatica\nEconomica , AseEconomica , Ase\nInformatica Economica | București\n2019 - 20232019 - 2023Liceu / Școală profesională - Colegiul National “Nicolae Grigorescu” ,Liceu / Școală profesională - Colegiul National “Nicolae Grigorescu” ,\nCampinaCampina\nFilologie | Campina\nPermis de conducerePermis de conducereCategoria BCategoria B\ndobândit în 27 Sep 2022\nAndrei DamianAndrei Damian\nBuzatoiuBuzatoiu\n--\nDate contactDate contact\nEmail: Email: buzatoiudamian@gmail.com\nTel: Tel: +40732064513\nOraș: Oraș: Campina\nDespre mineDespre mine\nSunt o persoană creativă, adaptabilă și motivată, cu abilități solide de comunicare. În cadrul facultății am\nacumulat experiență în programare (C, C#, C++, Java, Assembly) și în tehnologii web precum JavaScript, lucrând\ncu diverse medii de dezvoltare. Învăț rapid, mă adaptez ușor și îmi place să contribui la o atmosferă pozitivă în\nechipă.\nEducațieEducație\nAbilitățiAbilități\nAbilități generaleAbilități generale\nFlexibilitate, Creativitate, Perseverenta, Indemanare, cunostinte pachet office, C++, HTML, Visual Studio, Java,\nJavaScript, C#, Python, Intellij Idea, CSS, sql pl sql, Linux, Windows\nLimbi străineLimbi străine\nEngleză: Engleză: Avansat\nAlte informațiiAlte informații\nwww.ejobs.ro contact@ejobs.roCV Andrei Damian Buzatoiu 1/1",
+      "addedAt": "2026-02-10T17:51:35.051Z"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "job_it_01",
+      "title": "Senior React Developer",
+      "company": "TechSolutions SRL",
+      "requirements": [
+        "React",
+        "JavaScript",
+        "Redux",
+        "REST API",
+        "Engleză"
+      ],
+      "description": "Căutăm un frontend dev cu experiență pentru aplicații fintech complexe.",
+      "addedAt": "2025-11-23T10:00:00.000Z"
+    },
+    {
+      "id": "job_it_02",
+      "title": "QA Automation Engineer",
+      "company": "SoftBin",
+      "requirements": [
+        "Python",
+        "Selenium",
+        "Testare automată",
+        "Git"
+      ],
+      "description": "Rol pentru un inginer QA care vrea să automatizeze procesele de testare.",
+      "addedAt": "2025-11-23T10:05:00.000Z"
+    },
+    {
+      "id": "job_fin_01",
+      "title": "Contabil Junior",
+      "company": "ExpertContab",
+      "requirements": [
+        "Studii Economice",
+        "Excel",
+        "Seriozitate"
+      ],
+      "description": "Firmă de contabilitate angajează junior pentru operare date primare.",
+      "addedAt": "2025-11-23T10:10:00.000Z"
+    },
+    {
+      "id": "job_trans_01",
+      "title": "Șofer Distribuție",
+      "company": "Logistics Rapid",
+      "requirements": [
+        "Permis B",
+        "Cazier curat",
+        "Experiență 1 an"
+      ],
+      "description": "Distribuție marfă în București/Ilfov. Program Luni-Vineri.",
+      "addedAt": "2025-11-23T10:15:00.000Z"
+    },
+    {
+      "id": "job_trans_02",
+      "title": "Șofer TIR Comunitate",
+      "company": "EuroTrans",
+      "requirements": [
+        "Permis C+E",
+        "Card Taho",
+        "Disponibilitate deplasare"
+      ],
+      "description": "Curse Tur-Retur România-Germania. Salariu motivant + diurnă.",
+      "addedAt": "2025-11-23T10:17:00.000Z"
+    },
+    {
+      "id": "job_sales_01",
+      "title": "Reprezentant Vânzări Auto",
+      "company": "AutoMobile Vest",
+      "requirements": [
+        "Experiență vânzări",
+        "Permis B",
+        "Negociere"
+      ],
+      "description": "Consilier vânzări showroom auto. Bonusuri din vânzări.",
+      "addedAt": "2025-11-23T10:20:00.000Z"
+    },
+    {
+      "id": "job_med_01",
+      "title": "Asistent Medical Generalist",
+      "company": "Clinica Sănătatea",
+      "requirements": [
+        "Școală sanitară",
+        "Aviz liberă practică",
+        "Recoltare"
+      ],
+      "description": "Asistent pentru laborator analize și recepție pacienți.",
+      "addedAt": "2025-11-23T10:25:00.000Z"
+    },
+    {
+      "id": "job_edu_01",
+      "title": "Profesor Limba Engleză",
+      "company": "Afterschool SmartKids",
+      "requirements": [
+        "Engleză Avansat",
+        "Răbdare cu copiii",
+        "Creativitate"
+      ],
+      "description": "Predare engleză prin joc pentru copii 6-10 ani. Part-time.",
+      "addedAt": "2025-11-23T10:30:00.000Z"
+    },
+    {
+      "id": "job_horeca_01",
+      "title": "Bucătar Șef",
+      "company": "Restaurant La Ceaun",
+      "requirements": [
+        "Experiență 5 ani",
+        "Bucătărie tradițională",
+        "Leadership"
+      ],
+      "description": "Coordonarea bucătăriei pentru un restaurant cu specific românesc.",
+      "addedAt": "2025-11-23T10:35:00.000Z"
+    },
+    {
+      "id": "job_constr_01",
+      "title": "Electrician Mentenanță",
+      "company": "ElectroServ",
+      "requirements": [
+        "Calificare electrician",
+        "Disponibilitate intervenții"
+      ],
+      "description": "Mentenanță instalații electrice la clădiri de birouri.",
+      "addedAt": "2025-11-23T10:40:00.000Z"
+    },
+    {
+      "id": "job_constr_02",
+      "title": "Inginer Șef Șantier",
+      "company": "BuildCorp",
+      "requirements": [
+        "Inginer constructor",
+        "Experiență șantier",
+        "AutoCAD"
+      ],
+      "description": "Urmărirea execuției lucrărilor pentru un ansamblu rezidențial.",
+      "addedAt": "2025-11-23T10:45:00.000Z"
+    },
+    {
+      "id": "job_legal_01",
+      "title": "Consilier Juridic",
+      "company": "Global Consulting",
+      "requirements": [
+        "Drept",
+        "Engleză juridică",
+        "Experiență contracte"
+      ],
+      "description": "Consultanță juridică pentru clienți corporate.",
+      "addedAt": "2025-11-23T10:50:00.000Z"
+    },
+    {
+      "id": "job_mkt_01",
+      "title": "Social Media Manager",
+      "company": "Creative Agency",
+      "requirements": [
+        "Facebook Ads",
+        "Copywriting",
+        "Creativitate"
+      ],
+      "description": "Gestionarea conturilor de social media pentru clienți diverși.",
+      "addedAt": "2025-11-23T10:55:00.000Z"
+    },
+    {
+      "id": "job_hr_01",
+      "title": "Recruiter IT",
+      "company": "Talent Hunter",
+      "requirements": [
+        "Experiență recrutare",
+        "Cunoștințe tehnice minime",
+        "LinkedIn"
+      ],
+      "description": "Căutare și selecție candidați pentru roluri de programare.",
+      "addedAt": "2025-11-23T11:00:00.000Z"
+    },
+    {
+      "id": "job_auto_01",
+      "title": "Mecanic Auto",
+      "company": "AutoFix Service",
+      "requirements": [
+        "Experiență mecanică",
+        "Seriozitate",
+        "Punctualitate"
+      ],
+      "description": "Service auto angajează mecanic pentru reparații generale.",
+      "addedAt": "2025-11-23T11:05:00.000Z"
+    },
+    {
+      "id": "job_imob_01",
+      "title": "Agent Imobiliar",
+      "company": "City Estate",
+      "requirements": [
+        "Abilități comunicare",
+        "Permis B",
+        "Aspect plăcut"
+      ],
+      "description": "Intermediere vânzări/închirieri imobile. Comision atractiv.",
+      "addedAt": "2025-11-23T11:10:00.000Z"
+    },
+    {
+      "id": "job_sec_01",
+      "title": "Office Manager",
+      "company": "Business Center",
+      "requirements": [
+        "Engleză",
+        "MS Office",
+        "Organizare"
+      ],
+      "description": "Gestionarea recepției și a protocolului pentru clădire de birouri.",
+      "addedAt": "2025-11-23T11:15:00.000Z"
+    },
+    {
+      "id": "job_secu_01",
+      "title": "Agent Securitate",
+      "company": "SafeGuard",
+      "requirements": [
+        "Atestat pază",
+        "Fără cazier",
+        "Disponibilitate ture"
+      ],
+      "description": "Pază obiectiv industrial, monitorizare acces.",
+      "addedAt": "2025-11-23T11:20:00.000Z"
+    },
+    {
+      "id": "job_design_01",
+      "title": "Graphic Designer (Produs)",
+      "company": "eCommerce Brands",
+      "requirements": [
+        "Adobe Suite",
+        "Design Ambalaj",
+        "Atenție detalii"
+      ],
+      "description": "Creare materiale vizuale pentru produse fizice.",
+      "addedAt": "2025-11-23T20:21:11.742Z"
+    },
+    {
+      "id": "job_agr_01",
+      "title": "Inginer Agronom",
+      "company": "AgroFarm",
+      "requirements": [
+        "Studii agronomie",
+        "Permis B",
+        "Disponibilitate teren"
+      ],
+      "description": "Supravegherea culturilor de cereale în ferma noastră.",
+      "addedAt": "2025-11-23T11:30:00.000Z"
+    },
+    {
+      "id": "1763930232477",
+      "title": "Junior it dev",
+      "company": "devsoft.com",
+      "requirements": [
+        "-"
+      ],
+      "description": "Cautam studenti entuziasti pentru a partica la programul nostru de internship \nnice to have: english b1 , cunostinte office, faci parte dintr o facultate de informatica /cibernetica",
+      "addedAt": "2025-11-23T20:37:12.477Z"
+    }
+  ]
+}

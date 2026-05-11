@@ -1,0 +1,231 @@
+.collab-page {
+  min-height: 100vh;
+  padding: 34px;
+  background: var(--page-gradient);
+}
+
+.collab-hero,
+.collab-status,
+.collab-grid,
+.collab-achievements {
+  width: min(1220px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.collab-hero {
+  margin-bottom: 22px;
+  padding: 34px;
+  border: 1px solid var(--primary-border);
+  border-radius: 12px;
+  background: var(--hero-gradient);
+}
+
+.collab-badge {
+  display: inline-flex;
+  width: fit-content;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: var(--primary-soft);
+  color: var(--primary-2);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.collab-hero h1 {
+  margin: 12px 0 6px;
+  color: var(--primary-2);
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.collab-hero p,
+.collab-muted,
+.collab-panel p {
+  color: var(--text-muted);
+}
+
+.collab-status {
+  border: 1px solid var(--primary-border);
+  border-radius: 8px;
+  background: var(--primary-soft);
+  color: var(--primary-2);
+  padding: 10px 12px;
+  margin-bottom: 18px;
+}
+
+.collab-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(340px, 0.65fr);
+  gap: 24px;
+  margin-bottom: 24px;
+  align-items: start;
+}
+
+.collab-panel {
+  background: var(--surface-glass);
+  border: 1px solid var(--primary-border);
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: var(--shadow);
+}
+
+.collab-panel-head,
+.collab-inline,
+.collab-send,
+.collab-team {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.collab-panel-head {
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.collab-panel h2 {
+  margin: 0 0 6px;
+  color: var(--ink);
+}
+
+.collab-chat-panel {
+  min-height: 460px;
+}
+
+.collab-messages {
+  min-height: 300px;
+  max-height: 420px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 4px;
+}
+
+.collab-message,
+.collab-ticket,
+.collab-team,
+.collab-achievement {
+  border: 1px solid rgba(15, 23, 42, 0.09);
+  border-radius: 8px;
+  background: var(--surface-soft);
+  padding: 12px;
+}
+
+.collab-message strong,
+.collab-ticket strong,
+.collab-team strong,
+.collab-achievement strong {
+  color: var(--ink);
+}
+
+.collab-message p,
+.collab-team p,
+.collab-achievement p {
+  margin: 6px 0 0;
+}
+
+.collab-form,
+.collab-list,
+.collab-team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.collab-form {
+  margin-bottom: 16px;
+}
+
+.collab-send input,
+.collab-form input,
+.collab-form textarea,
+.collab-form select,
+.collab-panel select {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  padding: 10px 12px;
+  font: inherit;
+}
+
+.collab-send button,
+.collab-form button,
+.collab-team button {
+  border: none;
+  border-radius: 8px;
+  background: var(--accent-gradient);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 800;
+  padding: 10px 14px;
+  white-space: nowrap;
+}
+
+.collab-send button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.collab-ticket {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.collab-team {
+  justify-content: space-between;
+}
+
+.collab-team div {
+  flex: 1;
+}
+
+.collab-team span,
+.collab-ticket span,
+.collab-achievement span {
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.collab-achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.collab-achievement {
+  opacity: 0.62;
+}
+
+.collab-achievement.unlocked {
+  opacity: 1;
+  border-color: #14b8a6;
+}
+
+@media (max-width: 960px) {
+  .collab-grid,
+  .collab-achievement-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .collab-page {
+    padding: 18px;
+  }
+
+  .collab-panel-head,
+  .collab-inline,
+  .collab-send,
+  .collab-team,
+  .collab-ticket {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}

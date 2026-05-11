@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="220" viewBox="0 0 860 220" role="img" aria-label="HighFive logo">
+  <defs>
+    <linearGradient id="ccGradBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3B82F6"></stop>
+      <stop offset="100%" stop-color="#1D4ED8"></stop>
+    </linearGradient>
+    <linearGradient id="ccGradPurple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#A855F7"></stop>
+      <stop offset="100%" stop-color="#6D28D9"></stop>
+    </linearGradient>
+    <style>
+      .cc-word1 { font: 700 92px system-ui, -apple-system, Segoe UI, Roboto, Arial; fill:#7C3AED; }
+      .cc-word2 { font: 800 92px system-ui, -apple-system, Segoe UI, Roboto, Arial; fill:#2563EB; }
+    </style>
+  </defs>
+
+  <!-- ICON -->
+  <g transform="translate(30,25)">
+    <!-- network arcs -->
+    <path d="M35 120 C70 160, 160 160, 195 120" fill="none" stroke="url(#ccGradPurple)" stroke-width="10" stroke-linecap="round"></path>
+    <path d="M55 135 C90 165, 140 165, 175 135" fill="none" stroke="url(#ccGradBlue)" stroke-width="10" stroke-linecap="round"></path>
+
+    <!-- nodes -->
+    <circle cx="35" cy="120" r="12" fill="url(#ccGradPurple)"></circle>
+    <circle cx="195" cy="120" r="12" fill="url(#ccGradBlue)"></circle>
+    <circle cx="115" cy="150" r="12" fill="url(#ccGradBlue)"></circle>
+
+    <!-- people heads -->
+    <circle cx="115" cy="48" r="26" fill="url(#ccGradBlue)"></circle>
+    <circle cx="60" cy="70" r="20" fill="url(#ccGradPurple)" opacity="0.95"></circle>
+    <circle cx="170" cy="70" r="20" fill="url(#ccGradPurple)" opacity="0.95"></circle>
+
+    <!-- center body -->
+    <path d="M75 150
+             C78 110, 92 86, 115 86
+             C138 86, 152 110, 155 150
+             Z" fill="url(#ccGradBlue)"></path>
+
+    <!-- side bodies -->
+    <path d="M35 150
+             C37 120, 48 104, 60 104
+             C72 104, 83 120, 85 150
+             Z" fill="url(#ccGradPurple)" opacity="0.95"></path>
+
+    <path d="M145 150
+             C147 120, 158 104, 170 104
+             C182 104, 193 120, 195 150
+             Z" fill="url(#ccGradPurple)" opacity="0.95"></path>
+  </g>
+
+  <!-- TEXT -->
+  <text x="290" y="105" class="cc-word1">High</text>
+  <text x="290" y="190" class="cc-word2">Five</text>
+</svg>

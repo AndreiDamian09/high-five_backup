@@ -1,0 +1,62 @@
+.contributor-card {
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 14px 16px;
+  background: #ffffff;
+  margin-bottom: 12px;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.contributor-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+.contributor-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contributor-card__name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.contributor-card__score {
+  background: #d1fae5;
+  color: #065f46;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.contributor-card__location {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.contributor-card__about {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.4;
+}
+
+.contributor-card__footer {
+  margin-top: 12px;
+}
+
+.contributor-card__badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #3730a3;
+  font-size: 12px;
+  font-weight: 600;
+}

@@ -1,7 +1,7 @@
 .admin-page {
   min-height: 100vh;
   padding: 34px;
-  background: var(--page-gradient);
+  background: transparent;
 }
 
 .admin-hero,
@@ -15,10 +15,10 @@
 
 .admin-hero {
   margin-bottom: 22px;
-  padding: 34px;
-  border: 1px solid var(--primary-border);
-  border-radius: 12px;
-  background: var(--hero-gradient);
+  padding: 20px 0 12px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
 }
 
 .admin-badge {

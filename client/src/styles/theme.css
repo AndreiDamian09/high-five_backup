@@ -59,8 +59,12 @@ body,
 
 body {
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: var(--bg);
+  background: var(--page-gradient);
   color: var(--text);
+}
+
+#root {
+  background: var(--page-gradient);
 }
 
 button,

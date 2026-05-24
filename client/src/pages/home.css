@@ -1,6 +1,6 @@
 .home-page {
   min-height: calc(100vh - 64px);
-  background: var(--page-gradient);
+  background: transparent;
   color: var(--text);
 }
 

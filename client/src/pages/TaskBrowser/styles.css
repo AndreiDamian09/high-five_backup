@@ -1,13 +1,13 @@
 /* Task Browser Page Styles */
 .task-browser {
   min-height: 100vh;
-  background: var(--page-gradient);
+  background: transparent;
 }
 
 /* Header */
 .browser-header {
-  background: var(--hero-gradient);
-  border-bottom: 1px solid var(--primary-border);
+  background: transparent;
+  border-bottom: 1px solid transparent;
 }
 
 .header-container {

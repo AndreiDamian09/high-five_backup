@@ -118,6 +118,11 @@ module.exports = (sequelize, DataTypes) => {
           }
         },
       },
+      visibility: {
+        type: DataTypes.ENUM("public", "private"),
+        defaultValue: "public",
+        allowNull: false,
+      },
       expires_at: {
         type: DataTypes.DATEONLY,
         allowNull: true,
@@ -139,6 +144,7 @@ module.exports = (sequelize, DataTypes) => {
     Job.hasMany(models.SavedJob, { foreignKey: "job_id" });
     Job.hasMany(models.ChatMessage, { foreignKey: "job_id" });
     Job.hasMany(models.SupportTicket, { foreignKey: "job_id" });
+    Job.hasMany(models.Milestone, { foreignKey: "job_id" });
     Job.belongsToMany(models.Skill, {
       through: models.JobSkill,
       foreignKey: "job_id",

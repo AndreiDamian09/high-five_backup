@@ -205,7 +205,7 @@
 
 .collab-achievement.unlocked {
   opacity: 1;
-  border-color: #14b8a6;
+  border-color: var(--primary);
 }
 
 @media (max-width: 960px) {

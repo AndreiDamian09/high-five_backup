@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"d:\\\\Andrei Damian\\\\Documents\\\\facultate\\\\licenta\\\\step_1_creatingTheEngine\\\\matching-system\" -Recurse -Force)",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "Bash(Sort-Object)",
+      "PowerShell(Get-ChildItem -Path \"d:\\\\Andrei Damian\\\\Documents\\\\facultate\\\\licenta\\\\step_1_creatingTheEngine\\\\matching-system\" -Depth 2 | ForEach-Object { if \\($_.PSIsContainer\\) { \"📁 \" + $_.FullName } else { \"📄 \" + $_.FullName } })",
+      "Bash(Get-ChildItem -Path \"d:\\\\Andrei Damian\\\\Documents\\\\facultate\\\\licenta\\\\step_1_creatingTheEngine\\\\matching-system\" -Recurse -Name)",
+      "Bash(Select-Object -First 50)",
+      "Bash(cd \"/d/Andrei Damian/Documents/facultate/licenta/step_1_creatingTheEngine/matching-system\" && find . -type f | head -100)",
+      "Read(//d/d/Andrei Damian/Documents/facultate/licenta/step_1_creatingTheEngine/**)",
+      "Bash(Get-ChildItem -Path \"d:\\\\Andrei Damian\\\\Documents\\\\facultate\\\\licenta\\\\step_1_creatingTheEngine\\\\matching-system\\\\client\\\\src\" -Recurse -Name)",
+      "Bash(findstr \"framer\")"
+    ]
+  }
+}

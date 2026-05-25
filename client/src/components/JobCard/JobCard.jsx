@@ -1,4 +1,5 @@
 import "./style.css";
+import { motion } from "framer-motion";
 
 function JobCard({ job, onApply, onNegotiate, onToggleSave, isSaved }) {
   // Determine difficulty based on experience level
@@ -34,7 +35,11 @@ function JobCard({ job, onApply, onNegotiate, onToggleSave, isSaved }) {
   };
 
   return (
-    <div className="job-card">
+    <motion.div
+      className="job-card"
+      whileHover={{ y: -4, boxShadow: "0 20px 50px rgba(15, 23, 42, 0.14)" }}
+      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+    >
       <div className="job-card-header">
         <div className="job-card-title-section">
           <h3 className="job-card-title">{job.title}</h3>
@@ -114,7 +119,7 @@ function JobCard({ job, onApply, onNegotiate, onToggleSave, isSaved }) {
           {isSaved ? "Saved" : "Save"}
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

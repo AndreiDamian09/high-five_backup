@@ -1,5 +1,5 @@
 export const animations = {
-  // 1. APARIȚIE ȘI LISTE
+  // Fade + slide up — general purpose entrance
   fadeInUp: {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
@@ -7,6 +7,7 @@ export const animations = {
     transition: { duration: 0.4, ease: "easeOut" }
   },
 
+  // Stagger parent — pairs with staggerItem on children
   containerStagger: {
     initial: { opacity: 0 },
     animate: {
@@ -15,7 +16,42 @@ export const animations = {
     }
   },
 
-  // 2. ELEMENTE DE INTERFAȚĂ (MODALE / POP-UPS)
+  // Stagger child — used inside containerStagger parents
+  staggerItem: {
+    hidden: { opacity: 0, y: 24 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.45, ease: [0.25, 0.46, 0.45, 0.94] } }
+  },
+
+  // Scale up from slightly small
+  scaleIn: {
+    initial: { opacity: 0, scale: 0.92 },
+    animate: { opacity: 1, scale: 1 },
+    transition: { type: "spring", damping: 22, stiffness: 260 }
+  },
+
+  // Slide from the left
+  slideInLeft: {
+    initial: { opacity: 0, x: -40 },
+    animate: { opacity: 1, x: 0 },
+    transition: { duration: 0.55, ease: "easeOut" }
+  },
+
+  // Slide from the right
+  slideInRight: {
+    initial: { opacity: 0, x: 40 },
+    animate: { opacity: 1, x: 0 },
+    transition: { duration: 0.55, ease: "easeOut" }
+  },
+
+  // Continuous vertical float
+  floatY: {
+    animate: {
+      y: [0, -8, 0],
+      transition: { duration: 3.5, repeat: Infinity, ease: "easeInOut" }
+    }
+  },
+
+  // Modal / card zoom entrance
   modalZoom: {
     initial: { opacity: 0, scale: 0.8 },
     animate: { opacity: 1, scale: 1 },
@@ -23,14 +59,14 @@ export const animations = {
     transition: { type: "spring", damping: 25, stiffness: 300 }
   },
 
-  // 3. FEEDBACK VIZUAL (BUTOANE ȘI CARDURI)
+  // Button press feedback
   buttonHover: {
     whileHover: { scale: 1.03, filter: "brightness(1.1)" },
     whileTap: { scale: 0.97 },
     transition: { type: "spring", stiffness: 400, damping: 10 }
   },
 
-  // 4. LOADING STATES (SKELETONS)
+  // Skeleton loading pulse
   skeletonGlow: {
     animate: {
       opacity: [0.4, 0.7, 0.4],
@@ -38,7 +74,7 @@ export const animations = {
     }
   },
 
-  // 5. NOTIFICĂRI SAU ERORI (SHAKE EFECT)
+  // Error shake
   shakeError: {
     animate: {
       x: [0, -10, 10, -10, 10, 0],
@@ -46,7 +82,7 @@ export const animations = {
     }
   },
 
-  // 6. TRANZIȚII DE PAGINĂ (FADE)
+  // Page-level fade + slide (used with AnimatePresence)
   pageTransition: {
     initial: { opacity: 0, x: -10 },
     animate: { opacity: 1, x: 0 },
@@ -54,7 +90,7 @@ export const animations = {
     transition: { duration: 0.3 }
   },
 
-  // 7. EXPANDARE (Pentru secțiuni de "Vezi Detalii" / Accordion)
+  // Accordion / detail expand
   expand: {
     initial: { height: 0, opacity: 0 },
     animate: { height: "auto", opacity: 1 },

@@ -100,3 +100,21 @@ export async function logout(req, res) {
   });
   return res.json({ message: "Logged out" });
 }
+
+// Apelat de Passport după autentificare OAuth reușită
+// req.user este setat de Passport cu obiectul User din DB
+export function oauthCallback(req, res) {
+  const user = req.user;
+  if (!user) {
+    return res.redirect(
+      `${process.env.FRONTEND_ORIGIN || "http://localhost:5173"}/login?error=oauth_failed`
+    );
+  }
+
+  const token = signToken({ sub: user.id, role: user.role });
+  setAuthCookie(res, token);
+
+  // Redirect la pagina potrivită rolului
+  const destination = user.role === "employer" ? "/requester" : "/contributor";
+  return res.redirect(`${process.env.FRONTEND_ORIGIN || "http://localhost:5173"}${destination}`);
+}

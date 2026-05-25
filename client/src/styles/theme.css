@@ -1,51 +1,72 @@
+/* ── Light mode ───────────────────────────────────────────────────────────── */
 :root {
   --bg: #f8fafc;
   --surface: #ffffff;
   --surface-glass: rgba(255, 255, 255, 0.96);
   --surface-soft: #f1f5f9;
-  --text: #111827;
+  --text: #1e293b;
   --text-muted: #64748b;
-  --border: #e5e7eb;
-  --primary: #06b6d4;
-  --primary-2: #009688;
-  --primary-soft: #ccfbf1;
-  --primary-border: rgba(20, 184, 166, 0.28);
+  --border: #e2e8f0;
+
+  /* Blue primary (replaced cyan) */
+  --primary: #2563eb;
+  --primary-2: #1d4ed8;
+  --primary-soft: rgba(37, 99, 235, 0.08);
+  --primary-border: rgba(37, 99, 235, 0.22);
+
+  /* Teal secondary accent */
+  --accent: #14b8a6;
+  --accent-soft: rgba(20, 184, 166, 0.1);
+  --accent-text: #0d9488;
+
   --warning: #f59e0b;
   --orange: #ea580c;
   --success: #16a34a;
   --danger: #dc2626;
-  --ink: #020617;
-  --accent-gradient: linear-gradient(90deg, #06b6d4, #14b8a6);
-  --page-gradient: radial-gradient(circle at top right, rgba(20, 184, 166, 0.14), transparent 38%),
-    linear-gradient(180deg, #f8fafc, #effdfb 46%, #ffffff);
-  --hero-gradient: linear-gradient(90deg, rgba(255, 255, 255, 0.82), rgba(207, 250, 254, 0.58));
-  --shadow: 0 14px 42px rgba(15, 23, 42, 0.06);
+  --ink: #0f172a;
+
+  --accent-gradient: linear-gradient(90deg, #2563eb, #3b82f6);
+  --page-gradient:
+    radial-gradient(circle at top right, rgba(37, 99, 235, 0.08), transparent 40%),
+    linear-gradient(180deg, #f8fafc, #eff6ff 48%, #ffffff);
+  --hero-gradient: linear-gradient(90deg, rgba(255, 255, 255, 0.84), rgba(219, 234, 254, 0.56));
+  --shadow: 0 14px 42px rgba(15, 23, 42, 0.07);
 }
 
+/* ── Dark mode ────────────────────────────────────────────────────────────── */
 html.dark-mode {
   --bg: #0f172a;
   --surface: #111827;
-  --surface-glass: rgba(17, 24, 39, 0.96);
-  --surface-soft: #1f2937;
-  --text: #e5e7eb;
-  --text-muted: #9ca3af;
-  --border: #374151;
-  --primary: #22d3ee;
-  --primary-2: #2dd4bf;
-  --primary-soft: rgba(20, 184, 166, 0.18);
-  --primary-border: rgba(45, 212, 191, 0.28);
+  --surface-glass: rgba(17, 24, 39, 0.97);
+  --surface-soft: #1e293b;
+  --text: #f1f5f9;
+  --text-muted: #94a3b8;
+  --border: #334155;
+
+  --primary: #3b82f6;
+  --primary-2: #60a5fa;
+  --primary-soft: rgba(59, 130, 246, 0.12);
+  --primary-border: rgba(59, 130, 246, 0.28);
+
+  --accent: #2dd4bf;
+  --accent-soft: rgba(45, 212, 191, 0.1);
+  --accent-text: #2dd4bf;
+
   --warning: #fbbf24;
   --orange: #fb923c;
   --success: #22c55e;
   --danger: #ef4444;
   --ink: #f8fafc;
-  --accent-gradient: linear-gradient(90deg, #22d3ee, #2dd4bf);
-  --page-gradient: radial-gradient(circle at top right, rgba(20, 184, 166, 0.16), transparent 34%),
+
+  --accent-gradient: linear-gradient(90deg, #2563eb, #3b82f6);
+  --page-gradient:
+    radial-gradient(circle at top right, rgba(59, 130, 246, 0.09), transparent 38%),
     linear-gradient(180deg, #0f172a, #111827);
-  --hero-gradient: linear-gradient(90deg, rgba(15, 23, 42, 0.88), rgba(20, 184, 166, 0.14));
-  --shadow: 0 10px 32px rgba(0, 0, 0, 0.45);
+  --hero-gradient: linear-gradient(90deg, rgba(15, 23, 42, 0.9), rgba(59, 130, 246, 0.08));
+  --shadow: 0 10px 32px rgba(0, 0, 0, 0.52);
 }
 
+/* ── Base reset ───────────────────────────────────────────────────────────── */
 * {
   box-sizing: border-box;
 }

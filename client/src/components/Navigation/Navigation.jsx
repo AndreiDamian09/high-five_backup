@@ -1,11 +1,9 @@
 import { NavLink, useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 import { useAuth } from "../../context/AuthContext";
 import DarkModeToggle from "./DarkModeToggle";
 import ProfileMenu from "./ProfileMenu";
 import "./styles.css";
-
-
-//Navigation component with dynamic links based on authentication status and user role
 
 export default function Navigation() {
   const { user, isAuthenticated, logout, loading } = useAuth();
@@ -17,7 +15,12 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="main-nav">
+    <motion.nav
+      className="main-nav"
+      initial={{ y: -72, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.45, ease: [0.25, 0.46, 0.45, 0.94] }}
+    >
       <NavLink to="/" className="main-nav__brand">
         <img src="/Group.png" alt="HighFive Logo" height="39" />
       </NavLink>
@@ -88,6 +91,6 @@ export default function Navigation() {
       )}
 
       <DarkModeToggle />
-    </nav>
+    </motion.nav>
   );
 }

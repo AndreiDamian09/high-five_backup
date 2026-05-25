@@ -109,6 +109,21 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.BOOLEAN,
         defaultValue: true,
       },
+      xp: {
+        type: DataTypes.INTEGER,
+        defaultValue: 0,
+        allowNull: false,
+      },
+      level: {
+        type: DataTypes.INTEGER,
+        defaultValue: 1,
+        allowNull: false,
+      },
+      rank: {
+        type: DataTypes.ENUM("bronze", "silver", "gold", "platinum"),
+        defaultValue: "bronze",
+        allowNull: false,
+      },
       cv_raw_text: {
         type: DataTypes.TEXT,
         allowNull: true,

@@ -2,11 +2,19 @@ import "./styles.css";
 import { useEffect, useState, useMemo } from "react";
 import { apiDelete, apiGet, apiPostJson } from "../../lib/api";
 import JobCard from "../../components/JobCard/JobCard";
-import {animations} from "../variants";
+import { animations } from "../variants";
 import { motion as Motion } from "framer-motion";
 import { useAuth } from "../../context/AuthContext";
 
-// Categories based on industry types
+const listContainer = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.07, delayChildren: 0.05 } },
+};
+const listItem = {
+  hidden: { opacity: 0, y: 22 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.38, ease: "easeOut" } },
+};
+
 const CATEGORIES = [
   "All Categories",
   "IT & Software",
@@ -53,7 +61,9 @@ function TaskBrowser() {
       try {
         const [data, applications] = await Promise.all([
           apiGet("/jobs"),
-          isAuthenticated && user?.role === "candidate" ? apiGet("/me/applications") : Promise.resolve([]),
+          isAuthenticated && user?.role === "candidate"
+            ? apiGet("/me/applications")
+            : Promise.resolve([]),
         ]);
         setJobs(data);
         const applied = new Set((applications || []).map((a) => a.job_id));
@@ -68,12 +78,16 @@ function TaskBrowser() {
 
   async function handleApply(jobId) {
     if (!isAuthenticated || user?.role !== "candidate") {
-      setActionMessage("You need to be signed in as a contributor to join tasks.");
+      setActionMessage(
+        "You need to be signed in as a contributor to join tasks.",
+      );
       return;
     }
     try {
       await apiPostJson(`/jobs/${jobId}/apply`, { cover_letter: "" });
-      setSavedJobIds((prev) => (prev.includes(jobId) ? prev : [...prev, jobId]));
+      setSavedJobIds((prev) =>
+        prev.includes(jobId) ? prev : [...prev, jobId],
+      );
       setActionMessage("Request sent to the requester.");
     } catch (e) {
       setActionMessage(`Could not join task: ${e.message}`);
@@ -82,7 +96,9 @@ function TaskBrowser() {
 
   async function handleToggleSave(jobId) {
     if (!isAuthenticated || user?.role !== "candidate") {
-      setActionMessage("You need to be signed in as a contributor to save tasks.");
+      setActionMessage(
+        "You need to be signed in as a contributor to save tasks.",
+      );
       return;
     }
     try {
@@ -110,16 +126,23 @@ function TaskBrowser() {
 
     try {
       await apiPostJson(`/jobs/${negotiationTask.id}/apply`, negotiationForm);
-      setSavedJobIds((prev) => (prev.includes(negotiationTask.id) ? prev : [...prev, negotiationTask.id]));
+      setSavedJobIds((prev) =>
+        prev.includes(negotiationTask.id)
+          ? prev
+          : [...prev, negotiationTask.id],
+      );
       setActionMessage("Negotiation sent to the requester.");
       setNegotiationTask(null);
-      setNegotiationForm({ proposed_budget: "", availability_note: "", negotiation_message: "" });
+      setNegotiationForm({
+        proposed_budget: "",
+        availability_note: "",
+        negotiation_message: "",
+      });
     } catch (e) {
       setActionMessage(`Could not send negotiation: ${e.message}`);
     }
   }
 
-  // Filter and sort jobs
   const filteredJobs = useMemo(() => {
     let result = [...jobs];
 
@@ -131,16 +154,16 @@ function TaskBrowser() {
           job.title?.toLowerCase().includes(query) ||
           job.description?.toLowerCase().includes(query) ||
           job.Employer?.company_name?.toLowerCase().includes(query) ||
-          job.Skills?.some((skill) => skill.name?.toLowerCase().includes(query))
+          job.Skills?.some((skill) =>
+            skill.name?.toLowerCase().includes(query),
+          ),
       );
     }
 
-    // Category filter
     if (selectedCategory !== "All Categories") {
       result = result.filter((job) => job.industry === selectedCategory);
     }
 
-    // Difficulty/Experience filter
     if (selectedDifficulty !== "All Levels") {
       result = result.filter((job) => {
         const level = job.experience_level?.toLowerCase();
@@ -149,7 +172,6 @@ function TaskBrowser() {
       });
     }
 
-    // Sorting
     result.sort((a, b) => {
       switch (sortBy) {
         case "newest":
@@ -168,16 +190,16 @@ function TaskBrowser() {
     return result;
   }, [jobs, searchQuery, selectedCategory, selectedDifficulty, sortBy]);
 
-  // Calculate stats
   const stats = useMemo(() => {
     const totalTasks = filteredJobs.length;
     const avgBudget =
       filteredJobs.length > 0
         ? Math.round(
             filteredJobs.reduce(
-              (sum, job) => sum + ((job.salary_min || 0) + (job.salary_max || 0)) / 2,
-              0
-            ) / filteredJobs.length
+              (sum, job) =>
+                sum + ((job.salary_min || 0) + (job.salary_max || 0)) / 2,
+              0,
+            ) / filteredJobs.length,
           )
         : 0;
     return { totalTasks, avgBudget };
@@ -196,7 +218,8 @@ function TaskBrowser() {
 
   if (error) {
     return (
-      <Motion.div className="task-browser"
+      <Motion.div
+        className="task-browser"
         variants={animations.shakeError}
         initial="initial"
         animate="animate"
@@ -219,7 +242,8 @@ function TaskBrowser() {
     >
       {/* Header */}
       <div className="browser-header">
-        <Motion.div className="header-container"
+        <Motion.div
+          className="header-container"
           variants={animations.fadeInUp}
           initial="initial"
           animate="animate"
@@ -227,19 +251,19 @@ function TaskBrowser() {
         >
           <h1 className="browser-title">Browse Available Projects</h1>
           <p className="browser-subtitle">
-            Discover crowdsourcing projects matched to your profile, skills, budget range, and availability.
+            Discover crowdsourcing projects matched to your profile, skills,
+            budget range, and availability.
           </p>
         </Motion.div>
       </div>
 
-      {/* Main Content */}
-      <Motion.div className="browser-content"
+      <Motion.div
+        className="browser-content"
         variants={animations.containerStagger}
         initial="initial"
         animate="animate"
         exit="exit"
       >
-        {/* Sidebar Filters */}
         <aside className="filters-sidebar">
           <div className="filters-header">
             <svg
@@ -295,15 +319,15 @@ function TaskBrowser() {
             <div className="stat-item">
               <span className="stat-label">Avg. Budget</span>
               <span className="stat-value">
-                {stats.avgBudget > 0 ? `$${stats.avgBudget.toLocaleString()}` : "N/A"}
+                {stats.avgBudget > 0
+                  ? `$${stats.avgBudget.toLocaleString()}`
+                  : "N/A"}
               </span>
             </div>
           </div>
         </aside>
 
-        {/* Main Task List */}
         <main className="tasks-main">
-          {/* Search and Sort Bar */}
           <div className="tasks-toolbar">
             <div className="search-container">
               <svg
@@ -326,13 +350,15 @@ function TaskBrowser() {
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
             </div>
-            {actionMessage && <p className="task-action-message">{actionMessage}</p>}
+            {actionMessage && (
+              <p className="task-action-message">{actionMessage}</p>
+            )}
           </div>
 
-          {/* Results Header */}
           <div className="results-header">
             <span className="results-count">
-              Showing {filteredJobs.length} project{filteredJobs.length !== 1 ? "s" : ""}
+              Showing {filteredJobs.length} project
+              {filteredJobs.length !== 1 ? "s" : ""}
             </span>
             <select
               className="sort-select"
@@ -347,9 +373,8 @@ function TaskBrowser() {
             </select>
           </div>
 
-          {/* Task List */}
-          <div className="tasks-list">
-            {filteredJobs.length === 0 ? (
+          {filteredJobs.length === 0 ? (
+            <div className="tasks-list">
               <div className="no-results">
                 <p>No projects found matching your criteria.</p>
                 <button
@@ -363,37 +388,65 @@ function TaskBrowser() {
                   Reset Filters
                 </button>
               </div>
-            ) : (
-              filteredJobs.map((job) => (
-                <JobCard
-                  key={job.id}
-                  job={job}
-                  onApply={handleApply}
-                  onNegotiate={setNegotiationTask}
-                  onToggleSave={handleToggleSave}
-                  isSaved={savedJobIds.includes(job.id)}
-                />
-              ))
-            )}
-          </div>
+            </div>
+          ) : (
+            <Motion.div
+              className="tasks-list"
+              variants={listContainer}
+              initial="hidden"
+              animate="show"
+              key={`${searchQuery}-${selectedCategory}-${selectedDifficulty}-${sortBy}`}
+            >
+              {filteredJobs.map((job) => (
+                <Motion.div key={job.id} variants={listItem}>
+                  <JobCard
+                    job={job}
+                    onApply={handleApply}
+                    onNegotiate={setNegotiationTask}
+                    onToggleSave={handleToggleSave}
+                    isSaved={savedJobIds.includes(job.id)}
+                  />
+                </Motion.div>
+              ))}
+            </Motion.div>
+          )}
         </main>
       </Motion.div>
 
       {negotiationTask && (
-        <div className="negotiation-backdrop" role="presentation" onMouseDown={() => setNegotiationTask(null)}>
-          <form className="negotiation-modal" onSubmit={handleNegotiate} onMouseDown={(e) => e.stopPropagation()}>
+        <div
+          className="negotiation-backdrop"
+          role="presentation"
+          onMouseDown={() => setNegotiationTask(null)}
+        >
+          <form
+            className="negotiation-modal"
+            onSubmit={handleNegotiate}
+            onMouseDown={(e) => e.stopPropagation()}
+          >
             <div className="negotiation-head">
               <div>
                 <h2>Negotiate Task</h2>
                 <p>{negotiationTask.title}</p>
               </div>
-              <button type="button" onClick={() => setNegotiationTask(null)} aria-label="Close negotiation">x</button>
+              <button
+                type="button"
+                onClick={() => setNegotiationTask(null)}
+                aria-label="Close negotiation"
+              >
+                x
+              </button>
             </div>
             <label>
               Proposed budget
               <input
                 value={negotiationForm.proposed_budget}
-                onChange={(e) => setNegotiationForm((prev) => ({ ...prev, proposed_budget: e.target.value }))}
+                onChange={(e) =>
+                  setNegotiationForm((prev) => ({
+                    ...prev,
+                    proposed_budget: e.target.value,
+                  }))
+                }
                 placeholder="Example: 1200 RON or 50 RON/hour"
               />
             </label>
@@ -401,7 +454,12 @@ function TaskBrowser() {
               Availability
               <input
                 value={negotiationForm.availability_note}
-                onChange={(e) => setNegotiationForm((prev) => ({ ...prev, availability_note: e.target.value }))}
+                onChange={(e) =>
+                  setNegotiationForm((prev) => ({
+                    ...prev,
+                    availability_note: e.target.value,
+                  }))
+                }
                 placeholder="Example: I can start Monday, 15 hours/week"
               />
             </label>
@@ -410,13 +468,26 @@ function TaskBrowser() {
               <textarea
                 rows="5"
                 value={negotiationForm.negotiation_message}
-                onChange={(e) => setNegotiationForm((prev) => ({ ...prev, negotiation_message: e.target.value }))}
+                onChange={(e) =>
+                  setNegotiationForm((prev) => ({
+                    ...prev,
+                    negotiation_message: e.target.value,
+                  }))
+                }
                 placeholder="Explain your approach, timeline, and what you want to negotiate."
               />
             </label>
             <div className="negotiation-actions">
-              <button type="button" className="reset-filters-btn secondary" onClick={() => setNegotiationTask(null)}>Cancel</button>
-              <button type="submit" className="reset-filters-btn">Send Negotiation</button>
+              <button
+                type="button"
+                className="reset-filters-btn secondary"
+                onClick={() => setNegotiationTask(null)}
+              >
+                Cancel
+              </button>
+              <button type="submit" className="reset-filters-btn">
+                Send Negotiation
+              </button>
             </div>
           </form>
         </div>

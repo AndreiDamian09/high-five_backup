@@ -1,4 +1,5 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 // import "./styles/App.css";
 
 import { AuthProvider } from "./context/AuthContext";
@@ -18,11 +19,13 @@ import RegisterPage from "./pages/Register/RegisterPage";
 //Main application component that sets up routing and authentication context for the app
 
 export default function App() {
+  const location = useLocation();
   return (
     <AuthProvider>
       <div>
         <Navigation />
-        <Routes>
+        <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
           <Route path="/" element={<MainPage />} />
           <Route path="/login" element={
             <GuestGuard>
@@ -63,6 +66,7 @@ export default function App() {
 
           <Route path="*" element={<h1>404 - Not Found</h1>} />
         </Routes>
+        </AnimatePresence>
       </div>
     </AuthProvider>
   );

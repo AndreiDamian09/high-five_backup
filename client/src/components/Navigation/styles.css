@@ -97,9 +97,14 @@
   border-radius: 999px;
   text-decoration: none;
   color: #fff;
-  background: var(--accent-gradient);
+  background: var(--primary);
   font-weight: 800;
   white-space: nowrap;
+  transition: background 0.2s ease;
+}
+
+.main-nav__cta:hover {
+  background: var(--primary-2);
 }
 
 .profile-avatar-btn {
@@ -109,7 +114,7 @@
   border-radius: 50%;
   padding: 0;
   overflow: hidden;
-  background: var(--accent-gradient);
+  background: var(--primary);
   color: #fff;
   cursor: pointer;
   display: inline-flex;
@@ -249,7 +254,13 @@
 .profile-primary-btn {
   border: none;
   color: #fff;
-  background: var(--accent-gradient);
+  background: var(--primary);
+  transition: background 0.2s ease;
+}
+
+.profile-upload-row button:hover,
+.profile-primary-btn:hover {
+  background: var(--primary-2);
 }
 
 .profile-secondary-btn {

@@ -27,7 +27,16 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: true,
       },
       status: {
-        type: DataTypes.ENUM("pending", "reviewed", "accepted", "rejected"),
+        type: DataTypes.ENUM(
+          "pending",
+          "reviewed",
+          "accepted",
+          "rejected",
+          "high_five_pending",
+          "in_progress",
+          "completed",
+          "cancelled"
+        ),
         defaultValue: "pending",
       },
       match_score: {
@@ -62,6 +71,8 @@ module.exports = (sequelize, DataTypes) => {
     Application.belongsTo(models.Job, { foreignKey: "job_id" });
     Application.belongsTo(models.Candidate, { foreignKey: "candidate_id" });
     Application.hasMany(models.SupportTicket, { foreignKey: "application_id" });
+    Application.hasMany(models.Milestone, { foreignKey: "application_id" });
+    Application.hasMany(models.Review, { foreignKey: "application_id" });
   };
 
   return Application;

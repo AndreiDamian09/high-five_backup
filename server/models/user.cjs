@@ -5,7 +5,9 @@ module.exports = (sequelize, DataTypes) => {
     {
       id: { type: DataTypes.UUID, primaryKey: true, defaultValue: DataTypes.UUIDV4 },
       email: { type: DataTypes.STRING(255), allowNull: false, unique: true },
-      password_hash: { type: DataTypes.STRING(255), allowNull: false },
+      password_hash: { type: DataTypes.STRING(255), allowNull: true },
+      oauth_provider: { type: DataTypes.ENUM("google", "linkedin"), allowNull: true },
+      oauth_id: { type: DataTypes.STRING(255), allowNull: true },
       role: { type: DataTypes.ENUM("candidate", "employer", "admin"), defaultValue: "candidate" },
       is_active: { type: DataTypes.BOOLEAN, defaultValue: true },
       is_verified: { type: DataTypes.BOOLEAN, defaultValue: false },

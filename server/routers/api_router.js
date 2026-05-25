@@ -48,8 +48,30 @@ apiRouter.post("/applications/:id/solution-feedback", requireAuth, requireRole("
 apiRouter.get("/match/job/:id", controller.user.matchCandidateForJob)
 apiRouter.get("/match/candidate/:id", controller.user.matchJobForCandidate)
 
-
 apiRouter.get("/employers", controller.user.getEmployers)
 apiRouter.get("/employers/:id", controller.user.getEmployerById)
+
+// High Five — colaborare bilaterala
+apiRouter.post("/applications/:id/high-five", requireAuth, requireRole("employer"), controller.user.sendHighFive)
+apiRouter.patch("/applications/:id/high-five", requireAuth, requireRole("candidate"), controller.user.respondToHighFive)
+apiRouter.post("/applications/:id/complete", requireAuth, controller.user.completeCollaboration)
+apiRouter.post("/applications/:id/cancel", requireAuth, controller.user.cancelCollaboration)
+
+// Milestones
+apiRouter.post("/applications/:id/milestones", requireAuth, requireRole("employer"), controller.user.createMilestone)
+apiRouter.get("/applications/:id/milestones", requireAuth, controller.user.getMilestones)
+apiRouter.patch("/applications/:id/milestones/:milestoneId", requireAuth, controller.user.updateMilestoneStatus)
+
+// Reviews / Rating
+apiRouter.post("/applications/:id/review", requireAuth, controller.user.submitReview)
+apiRouter.get("/reviews/user/:userId", controller.user.getReviewsForUser)
+
+// Leaderboard
+apiRouter.get("/leaderboard", controller.user.getLeaderboard)
+
+// Notifications
+apiRouter.get("/me/notifications", requireAuth, controller.user.getMyNotifications)
+apiRouter.patch("/me/notifications/:id/read", requireAuth, controller.user.markNotificationRead)
+apiRouter.patch("/me/notifications/read-all", requireAuth, controller.user.markAllNotificationsRead)
 
 export default apiRouter;

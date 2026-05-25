@@ -5,18 +5,13 @@ const genAI = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 export async function generateEmbedding(text) {
   try {
-//dreprecated
-    // const model = genAI.getGenerativeModel({ model: "text-embedding-001" });
-    // const result = await model.embedContent(text);
-    // return result.embedding.values;
-
-    const res= await genAI.models.embedContent({
-      model:"gemini-embedding-001",
-      contents:text,
+    const res = await genAI.models.embedContent({
+      model: "gemini-embedding-001",
+      contents: text,
       config: { outputDimensionality: 1536 },
     });
 
-        const values =
+    const values =
       res.embedding?.values ??
       res.embeddings?.[0]?.values;
 

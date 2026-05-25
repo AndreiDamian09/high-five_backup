@@ -19,7 +19,6 @@ export async function findCandidatesForJob(jobId, limit = 5, minScore = 0.6) {
     include: [{ model: Skill, through: { attributes: [] } }],
   });
 
-  //asteapta pana toate operatiile sutn terminate
   const matches = candidates
     .filter((c) => c.embedding)
     .map((candidate) => {
@@ -53,18 +52,6 @@ export async function findJobsForCandidate(candidateId, limit = 5, minScore = 0.
   if (!candidate.embedding) {
     throw new Error(`Candidatul ${candidateId} nu are embedding`);
   }
-
-  // console.log(
-  //   `   ${industry.icon} Domeniu: ${industry.color}${industry.industry}${RESET_COLOR}`
-  // );
-  // console.log(
-  //   `   ${expLevel.icon} Nivel: ${expLevel.level} (${expLevel.years} ani)`
-  // );
-  // console.log(
-  //   `   Skills: ${cv.skills.slice(0, 5).join(", ")}${
-  //     cv.skills.length > 5 ? "..." : ""
-  //   }`
-  // );
 
   const jobs = await Job.findAll({
     where: { status: "active" },

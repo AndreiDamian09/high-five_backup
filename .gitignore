@@ -8,3 +8,13 @@ server/node_modules/
 client/node_modules/
 client_backup
 
+# build and cache output
+dist/
+client/dist/
+client/.vite/
+
+# local runtime logs
+*.log
+*.err.log
+structure.txt
+
